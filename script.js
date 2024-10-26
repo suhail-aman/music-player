@@ -3,19 +3,19 @@ let songs=[
       title:"Zaroori Tha",
       artist:"Rahat Fateh Ali Khan",
       src:"../Zaroori Tha_320(PagalWorld.com.sb).mp3",
-      img:"../images/1201_4.jpg"
+      img:"../1201_4.jpg"
    },
    {
       title:"Dildariyan",
       artist:"Amrinder Gill",
       src:"../Dildarian - Amrinder Gill.mp3",
-      img:"../images/amrinder.jpg"
+      img:"../amrinder.jpg"
    },
    {
       title:"Cithi Na Koi Sandesh",
       artist:"Jagjeet Singh",
       src:"../Chithi Na Koi Sandesh Male Dushman 320 Kbps.mp3",
-      img:"../images/128Chithi Na Koi Sandesh Male - Dushman 128 Kbps.jpg"
+      img:"../128Chithi Na Koi Sandesh Male - Dushman 128 Kbps.jpg"
    }
 ];
 
