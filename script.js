@@ -12,7 +12,7 @@ let songs=[
       img:"../amrinder.jpg"
    },
    {
-      title:"Cithi Na Koi Sandesh",
+      title:"Chithi Na Koi Sandesh",
       artist:"Jagjeet Singh",
       src:"../Chithi Na Koi Sandesh Male Dushman 320 Kbps.mp3",
       img:"../128Chithi Na Koi Sandesh Male - Dushman 128 Kbps.jpg"
