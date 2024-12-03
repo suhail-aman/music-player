@@ -129,3 +129,14 @@ nav .circle:hover {
    color: #f53192; 
    text-shadow: 0 0 5px #f53192;
 }
+.time-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 0 -10px; /* Adjust spacing */
+   font-size: 14px;
+   color: #ffffffaa;
+}
+
+.time-container span {
+   font-weight: 500;
+}
