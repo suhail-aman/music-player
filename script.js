@@ -1,15 +1,15 @@
 let songs=[
-   // {
-   //    title:"Zaroori Tha",
-   //    artist:"Rahat Fateh Ali Khan",
-   //    src:"../Zaroori Tha_320(PagalWorld.com.sb).mp3",
-   //    img:"../1201_4.jpg"
-   // },
    {
       title:"Dildariyan",
       artist:"Amrinder Gill",
       src:"../Dildarian - Amrinder Gill.mp3",
       img:"../amrinder.jpg"
+   },
+   {
+      title:"Wo Humsafar Tha",
+      artist:"Qurat-ul-Ain Balouch",
+      src:"../Wo Humsafar Tha(KoshalWorld.Com).mp3",
+      img:"../Screenshot 2024-12-03 193029.jpg"
    },
    {
       title:"Chithi Na Koi Sandesh",
