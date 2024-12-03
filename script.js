@@ -12,6 +12,12 @@ let songs=[
       img:"../Screenshot 2024-12-03 193029.png"
    },
    {
+      title:"Itna Na Mujhse Tu Pyar Badha",
+      artist:"Talat Mahmood",
+      src:"../Itna Na Mujhse Tu Pyar Badha.....mp3",
+      img:"../itna na mujhse tu pyaar bhada.png"
+   },
+   {
       title:"Chithi Na Koi Sandesh",
       artist:"Jagjeet Singh",
       src:"../Chithi Na Koi Sandesh Male Dushman 320 Kbps.mp3",
