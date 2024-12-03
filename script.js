@@ -1,10 +1,10 @@
 let songs=[
-   {
-      title:"Zaroori Tha",
-      artist:"Rahat Fateh Ali Khan",
-      src:"../Zaroori Tha_320(PagalWorld.com.sb).mp3",
-      img:"../1201_4.jpg"
-   },
+   // {
+   //    title:"Zaroori Tha",
+   //    artist:"Rahat Fateh Ali Khan",
+   //    src:"../Zaroori Tha_320(PagalWorld.com.sb).mp3",
+   //    img:"../1201_4.jpg"
+   // },
    {
       title:"Dildariyan",
       artist:"Amrinder Gill",
