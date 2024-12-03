@@ -109,4 +109,35 @@ function toggleRepeat() {
       song.loop = false; 
    }
 }
+// time duration js
+const currentTimeDisplay = document.getElementById("current-time");
+const totalDurationDisplay = document.getElementById("total-duration");
+
+song.onloadedmetadata = function () {
+   progress.max = song.duration;
+   progress.value = song.currentTime;
+   totalDurationDisplay.textContent = formatTime(song.duration);
+};
+
+function updateProgress() {
+   progress.value = song.currentTime;
+   currentTimeDisplay.textContent = formatTime(song.currentTime);
+}
+
+// Convert time 
+function formatTime(time) {
+   const minutes = Math.floor(time / 60);
+   const seconds = Math.floor(time % 60).toString().padStart(2, "0");
+   return `${minutes}:${seconds}`;
+}
+
+if (song.play()) {
+   setInterval(updateProgress, 500);
+}
+
+progress.oninput = function () {
+   song.currentTime = progress.value;
+   updateProgress();
+};
+
 
