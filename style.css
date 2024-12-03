@@ -124,6 +124,7 @@ nav .circle:hover {
    width: 50px; 
    height: 50px;
    border-radius: 50%; 
+   margin-left: -10px;
 }
 #repeat-icon.active {
    color: #f53192; 
