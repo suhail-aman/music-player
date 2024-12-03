@@ -83,7 +83,9 @@ nav .circle:hover {
 }
 .controls {
    display: flex;
-   justify-content: center;
+   justify-content: center; 
+   position: relative; 
+   margin-left: 20px; 
 }
 .controls div {
    width: 50px;
@@ -110,4 +112,16 @@ nav .circle:hover {
    background: #f53192;
    color: #fff;
    transform: scale(1.2);
+}
+#repeat-icon {
+   font-size: 17px; 
+   color: #ffffff;
+   margin-left: 10px; 
+   cursor: pointer;
+   transition: color 0.3s, transform 0.2s;
+   margin-top: 17px;
+}
+#repeat-icon.active {
+   color: #f53192; 
+   text-shadow: 0 0 5px #f53192;
 }
