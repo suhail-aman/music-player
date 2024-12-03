@@ -95,3 +95,18 @@ document.addEventListener('keydown', function(event) {
       playPause();
    }
 });
+let isRepeatOn = false;
+
+function toggleRepeat() {
+   const repeatIcon = document.getElementById('repeat-icon');
+   isRepeatOn = !isRepeatOn;
+
+   if (isRepeatOn) {
+      repeatIcon.classList.add('active');
+      song.loop = true; 
+   } else {
+      repeatIcon.classList.remove('active');
+      song.loop = false; 
+   }
+}
+
