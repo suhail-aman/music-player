@@ -9,7 +9,7 @@ let songs=[
       title:"Wo Humsafar Tha",
       artist:"Qurat-ul-Ain Balouch",
       src:"../Wo Humsafar Tha(KoshalWorld.Com).mp3",
-      img:"../Screenshot 2024-12-03 193029.jpg"
+      img:"../Screenshot 2024-12-03 193029.png"
    },
    {
       title:"Chithi Na Koi Sandesh",
