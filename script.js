@@ -130,14 +130,55 @@ function formatTime(time) {
    const seconds = Math.floor(time % 60).toString().padStart(2, "0");
    return `${minutes}:${seconds}`;
 }
-
 if (song.play()) {
    setInterval(updateProgress, 500);
 }
-
 progress.oninput = function () {
    song.currentTime = progress.value;
    updateProgress();
 };
 
+const dropdownTrigger = document.querySelector('.dropdown-trigger');
+const dropdownMenu = dropdownTrigger.querySelector('.dropdown');
+   
+dropdownTrigger.addEventListener('click', function (e) {
+e.stopPropagation(); 
+dropdownMenu.classList.toggle('show'); 
+});
+   
+document.addEventListener('click', function () {
+dropdownMenu.classList.remove('show'); 
+});
+const volumeIcon = document.getElementById('volume-icon');
+const volumeRange = document.getElementById('volume-range');
+
+// Update volume based on range input
+volumeRange.addEventListener('input', function () {
+   song.volume = volumeRange.value;
+   updateVolumeIcon(volumeRange.value);
+});
+
+// Update volume icon based on the volume level
+function updateVolumeIcon(volume) {
+   if (volume === '0') {
+      volumeIcon.className = 'fa-solid fa-volume-xmark';
+   } else if (volume <= 0.5) {
+      volumeIcon.className = 'fa-solid fa-volume-low';
+   } else {
+      volumeIcon.className = 'fa-solid fa-volume-high';
+   }
+}
+
+// Mute/Unmute functionality
+volumeIcon.addEventListener('click', function () {
+   if (song.volume > 0) {
+      song.volume = 0;
+      volumeRange.value = 0;
+      updateVolumeIcon('0');
+   } else {
+      song.volume = 1;
+      volumeRange.value = 1;
+      updateVolumeIcon('1');
+   }
+});
 
