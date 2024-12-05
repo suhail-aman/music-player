@@ -147,7 +147,7 @@ nav .circle:hover {
    position: absolute;
    top: 45px;
    right: -27px;
-   background: rgba(255, 255, 255, 0.2);
+   background: rgba(0, 0, 0, 0);
    backdrop-filter: blur(8px);
    border-radius: 5px;
    width: 100px; 
