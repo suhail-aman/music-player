@@ -38,7 +38,7 @@ nav .circle {
    transition: transform 0.3s;
 }
 nav .circle:hover {
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 .song-img {
    width: 200px;
@@ -61,6 +61,7 @@ nav .circle:hover {
    color: #ffffffaa;
    margin-bottom: 20px;
 }
+
 #progress {
    -webkit-appearance: none;
    width: 100%;
@@ -133,11 +134,71 @@ nav .circle:hover {
 .time-container {
    display: flex;
    justify-content: space-between;
-   margin: 10px 0 -10px; /* Adjust spacing */
+   margin: 10px 0 -10px; 
    font-size: 14px;
    color: #ffffffaa;
 }
 
 .time-container span {
    font-weight: 500;
+}
+
+.dropdown {
+   position: absolute;
+   top: 45px;
+   right: -20px;
+   background: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(8px);
+   border-radius: 5px;
+   width: 100px; 
+   padding: 2px 0; 
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   display: none; 
+   z-index: 1000;
+   opacity: 0;
+   transform: translateY(-10px);
+   transition: all 0.3s ease;
+   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dropdown ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.dropdown li {
+   padding: 0px 6px;
+   cursor: pointer;
+   text-align: left;
+   white-space: nowrap;
+   transition: transform 0.2s ease; 
+}
+
+.dropdown li:hover {
+   background: #f53192;
+   color: #fff;
+   transform: scale(1.03); 
+}
+
+.dropdown li:not(:last-child) {
+   border-bottom: 1px solid #000; 
+}
+
+.dropdown a {
+   text-decoration: none;
+   color: #ffffffcc;
+   font-size: 13px; 
+   display: block;
+   font-weight: 500;
+}
+
+.dropdown-trigger {
+   position: relative;
+}
+
+.dropdown.show {
+   display: block;
+   opacity: 1;
+   transform: translateY(0);
 }
